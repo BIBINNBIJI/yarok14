@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Yarok14 offers ASIC design, FPGA prototyping, and AI/ML services to clients in the US, Europe, and Asia. Trusted partner for remote chip design and verification.">
+  <meta name="keywords"
+    content="VLSI design India, ASIC services, FPGA verification, AI hardware, remote chip design, Yarok14, AI ML startup, generative AI design, UVM verification, Business analytics, Data Science, design, open-source EDA">
+  <title>Yarok14</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #0a0f1b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .logo-wrapper {
+      display: inline-block;
+    }
+
+    .logo {
+      display: block;
+      margin: 10px auto;
+      height: 50px;
+      /* Adjust as needed */
+    }
+
+    h1,
+    h2 {
+      margin: 10px 0;
+    }
+
+    .h2-logo-container {
+      display: inline-block;
+      text-align: center;
+    }
+
+    .logo-fit {
+      height: 100%;
+      /* Adjust logo height */
+      width: 100%;
+      object-fit: contain;
+    }
+
+    a {
+      color: #00d2ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Announcement Banner */
+    .announcement {
+      background: #00d2ff;
+      color: #0a0f1b;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    /* Hero Header Image */
+    .hero-header {
+      background-color: #0a0f1b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0, 255, 200, 0.1);
+    }
+
+    .hero-logo {
+      max-width: 100%;
+      height: auto;
+      width: 500px;
+      border-radius: 10px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header Text and Nav */
+    header h1,
+    header h2 {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 8px 16px;
+      border: 1px solid #00d2ff;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #00d2ff;
+      color: #0a0f1b;
+    }
+
+    /* Section Titles */
+    section h2 {
+      text-align: center;
+      color: #00d2ff;
+      font-size: 2em;
+      margin-top: 40px;
+    }
+
+    /* Centered Paragraph */
+    .centered {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      padding: 10px 20px;
+    }
+
+    /* Card */
+    .card {
+      background: hwb(216 7% 85%);
+      border: 1px solid #1e2a3a;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px;
+      transform: rotateY(20deg);
+      transition: transform 0.5s;
+      box-shadow: 0 8px 20px rgba(224, 240, 7, 0.1);
+
+    }
+
+    .card:hover {
+      transform: rotateY(0deg);
+    }
+
+
+    /* Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Contact Section */
+    #contact a {
+      color: #00ffd5;
+      font-weight: bold;
+    }
+
+    #contact a:hover {
+      color: #00a6a6;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0a0f1b;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #1e2a3a;
+    }
+
+    footer .social-links a {
+      color: #00ffd5;
+      margin: 0 8px;
+    }
+
+    footer .social-links a:hover {
+      color: #00a6a6;
+    }
+
+    /* Responsive Text */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      header h2 {
+        font-size: 1.2em;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+
+
+  <link rel="icon" type="image/png" href="images/yarok14-header.png">
+</head>
+
+<body>
+
+  <div class="announcement">
+    Welcome to Yarok14 VLSI Design & Verification and AI ML Remote Services
+    <a href="#services">Learn more about our services</a>
+  </div>
+
+  <header>
+    <h1>Yarok14 </h1>
+    <img src="images/yarok14-header-1.png" alt="Logo" class="logo-fit">
+    <h2>VLSI design and AI ML services</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">VLSI Services</a>
+      <a href="#ai">AI, SDE & Data</a>
+      <a href="#prdct">Products</a>
+      <a href="#csp">Case studies and Projects</a>
+      <a href="#contact">Contact Us</a>
+
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Yarok14</h2>
+    <p class="centered">
+      Yarok14 is a next-generation technology company pioneering the convergence of semiconductor design, AI/ML
+      solutions, and intelligent software systems.
+
+      We specialize in delivering end-to-end hardware-software co-design, empowering industries in clean energy, AI,
+      industrial automation, healthcare, and embedded systems to solve complex challenges through innovation. At
+      Yarok14, we engineer solutions at the intersection of VLSI design, FPGA/ASIC development, AI/ML integration, data
+      engineering, and software development. Our flagship innovation—the Yarok14 Microprocessor—is a mixed-signal chip
+      optimized for biomethane production, blending sensor fusion, real-time analytics, and automated control to drive
+      sustainable energy outcomes.
+
+      We serve a global clientele, from startups to enterprise R&D labs, offering custom hardware design, AI/ML
+      modeling, scalable data solutions, and software development expertise tailored to accelerate product development
+      and digital transformation.
+    </p>
+    <div class="card" style="margin-top: 30px;">
+      <h3>Global VLSI Services</h3>
+      <p>We proudly serve clients across United States, Canada, Germany, Netherlands, France, United Kingdom, Israel,
+        Taiwan, Singapore, Japan, South Korea, and Australia along with Indian projects.</p>
+      <h4>How we work:</h4>
+      <ul>
+        <li>Secure global delivery via cloud-based client tools over VPN</li>
+        <li>Integration of open-source EDA tools to reduce cost and accelerate development</li>
+        <li>Flexible models — hourly, fixed-price, or project-based</li>
+        <li>Proven experience on IP, ASIC, FPGA projects</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ai">
+    <h2>AI, ML, Software development & Data Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AI & Machine Learning</h3>
+        <p>Develop intelligent systems for predictive analytics and optimization.</p>
+      </div>
+      <div class="card">
+        <h3>Generative AI</h3>
+        <p>Build GenAI solutions for text, image, and data generation.</p>
+      </div>
+      <div class="card">
+        <h3>Data Science</h3>
+        <p>Analyze data to extract insights, patterns, and business value.</p>
+      </div>
+      <div class="card">
+        <h3>Business Analysis</h3>
+        <p>Drive data-backed strategies to improve operations and decisions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>VLSI & Hardware Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>ASIC Design</h3>
+        <p>Custom RTL and analog design solutions for next-gen hardware.</p>
+        <p><strong>Specialties:</strong> Fabless semiconductor companies, ASIC/SoC design houses</p>
+      </div>
+      <div class="card">
+        <h3>FPGA Prototyping</h3>
+        <p>Rapid hardware-software co-design and validation on FPGA platforms.</p>
+        <p><strong>Specialties:</strong> Automotive, AI, 5G, and defense chip companies</p>
+      </div>
+      <div class="card">
+        <h3>Verification</h3>
+        <p>UVM and formal verification to ensure flawless silicon implementation.</p>
+        <p><strong>Specialties:</strong> IP vendors and startups</p>
+      </div>
+      <div class="card">
+        <h3>Client Tool Access</h3>
+        <p>Secure VPN-based access to client tools and environments under signed NDAs, ensuring confidentiality and
+          collaboration.</p>
+      </div>
+      <div class="card">
+        <h3>DFT (Design for Testability)</h3>
+        <p> Scan architecture design, memory BIST, boundary scan, and low-overhead test
+          logic insertion. </p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="prdct">
+    <h2>Products</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>
+          IoT based Biomethane Optimization System, which involves a combination of hardware and software components to
+          monitor
+          and control the production of biomethane.</h3>
+        <div
+          style="background-color: hwb(217 7% 85%); color: white; box-shadow: 2px 2px 12px rgba(0,0,0,0.1); font-family: Arial, sans-serif; font-size: 14px; line-height: 1.6;">
+          <p>
+            <strong>Hardware Components</strong><br><br>
+            1. ESP8266: A microcontroller with Wi-Fi capabilities for cloud communication.<br>
+            2. MSP430: A microcontroller unit (MCU) for general-purpose processing.<br>
+            3. Agitator: A device used to mix or stir liquids.<br>
+            4. Temp/pH sensors: Sensors to measure temperature and pH levels.<br>
+            5. Heating and pH controller: A device to control temperature and pH levels.<br>
+            6. SPM membrane: A type of membrane used for separation or filtration.<br>
+            7. Air compressor: A device to compress air.<br>
+            8. Energy meters: Devices to measure energy consumption.<br>
+            9. 2 Kwh generator: Electricity production<br>
+            10. Kerala Vision WiFi Router<br><br>
+
+            <strong>Software Components</strong><br><br>
+            1. Flutter: A framework for building SCADA (Supervisory Control and Data Acquisition) PLC frontend
+            software.<br>
+            2. Python: A programming language used for API development.<br>
+            3. SQL: A programming language used for backend database management.<br>
+            4. AWS: A cloud storage platform for storing and managing data.<br><br>
+
+            <strong>System Overview</strong><br><br>
+            The Biomethane Optimization System appears to be a comprehensive solution for monitoring and controlling
+            biomethane production. The system integrates various hardware and software components to:<br><br>
+            1. Monitor temperature, pH, and other parameters.<br>
+            2. Control heating, pH, and other processes.<br>
+            3. Measure energy consumption and optimize energy usage.<br>
+            4. Provide a user-friendly interface for monitoring and control using SCADA PLC frontend software.<br>
+            5. Store and manage data in the cloud using AWS.<br><br>
+
+            <strong>Benefits</strong><br><br>
+            The Biomethane Optimization System can help:<br>
+            1. Optimize biomethane production.<br>
+            2. Improve energy efficiency.<br>
+            3. Reduce costs.<br>
+            4. Enhance monitoring and control capabilities.<br>
+            5. Efficient Digestion of waste into nutrient value slurry.
+          </p>
+        </div>
+
+
+  </section>
+
+  <section id="csp">
+    <h2>Case studies and Projects</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>RISC-V pipeline</h3>
+        <div>
+          <p>
+            Custom RISC-V pipeline design and verification—delivering scalable, high-performance cores tailored for
+            next-gen embedded and AI applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>MAC array Design Verification (DV)</h3>
+        <div>
+          <p>
+            Accelerate silicon success with high-coverage, UVM-based Design Verification for MAC arrays—ensuring
+            accuracy, performance, and seamless integration in compute-intensive SoCs.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p class="centered">
+      If you're looking to accelerate tapeouts, improve verification coverage, reduce costs with open-source
+      integration, or prototype faster on FPGA, let's connect!
+    </p>
+    <p class="centered">
+      Email: <a href="mailto: bibinnbiji924@gmail.com">bibinnbiji924@gmail.com</a> | Phone: <a
+        href="callto: +91-9526932961">+91-9526932961</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yarok14. VLSI and AI Hardware Experts. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/company/yarok14" target="_blank">Follow on LinkedIn</a> |
+      <a href="https://www.github.com/BIBINNBIJI" target="_blank">Follow on GitHub</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
