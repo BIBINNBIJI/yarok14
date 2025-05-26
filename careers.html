@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Careers | Yarok14</title>
+  <title>Careers @ Yarok14</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/jpg" href="Yarok14-Stamp.jpg">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background-color: #e3e5eb;
+      background-color: #ffffff;
       color: #400303;
       line-height: 1.6;
     }
@@ -65,7 +66,7 @@
       border-radius: 12px;
       max-width: 600px;
       margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: left;
     }
 
@@ -74,7 +75,9 @@
       margin-top: 15px;
     }
 
-    input, textarea, select {
+    input,
+    textarea,
+    select {
       width: 100%;
       padding: 8px;
       margin-top: 5px;
@@ -95,7 +98,7 @@
       display: none;
       text-align: center;
       margin-top: 20px;
-      color: green;
+      color: rgb(0, 7, 0), 0, 0;
       font-size: 1.2em;
     }
 
@@ -124,41 +127,83 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="announcement">
     <header>
-      <h1>Careers at Yarok14</h1>
+      <h1>Careers @ Yarok14</h1>
     </header>
     <a href="index.html">← Back to Home</a>
   </div>
-
-  <nav>
-    <a href="index.html#about"><strong>About</strong></a>
-    <a href="index.html#services"><strong>VLSI Services</strong></a>
-    <a href="index.html#ai"><strong>AI, SDE & Data</strong></a>
-    <a href="index.html#prdct"><strong>Products</strong></a>
-    <a href="index.html#csp"><strong>Projects</strong></a>
-    <a href="index.html#contact"><strong>Contact</strong></a>
-    <a href="careers.html"><strong>Careers</strong></a>
-  </nav>
 
   <img src="YAROK 14 logo cover Page.png" alt="Yarok14 Logo" class="logo-fit">
 
   <div class="container">
     <h2>Job Application Form</h2>
+    <h2>Current Openings</h2>
+    <div
+      style="text-align: left; max-width: 800px; margin: auto; padding: 10px; background-color: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+      <h3>AI/ML Engineer</h3>
+      <p><strong>Posted:</strong> May 25, 2025</p>
+      <p>Join our AI hardware team to develop intelligent systems optimized for embedded and edge computing. You'll work
+        on model training, data pipelines, and integration with VLSI IPs.</p>
+      <ul>
+        <li>Experience with Python, TensorFlow/PyTorch, and ML Ops tools.</li>
+        <li>Exposure to RTL or edge deployment is a plus.</li>
+        <li>Minimum Years of expereince: 3 Years</li>
+      </ul>
+      <button onclick="scrollToForm('ai_ml_engineer')">Apply</button>
+
+      <h3>VLSI Design Verification Engineer</h3>
+      <p><strong>Posted:</strong> May 25, 2025</p>
+      <p>Work on UVM-based functional verification of complex IPs and SoCs. Contribute to testbenches, coverage models,
+        and regression analysis.</p>
+      <ul>
+        <li>Strong knowledge of SystemVerilog and UVM methodology.</li>
+        <li>Experience with EDA tools (Synopsys, Cadence) is preferred.</li>
+        <li>Minimum Years of expereince: 6 Years</li>
+      </ul>
+      <button onclick="scrollToForm('VLSI_design_DV')">Apply</button>
+
+      <h3>Frontend Developer</h3>
+      <p><strong>Posted:</strong> May 20, 2025</p>
+      <p>Design and implement user interfaces for web-based chip design platforms. Collaborate with backend and hardware
+        teams.</p>
+      <ul>
+        <li>Proficiency in HTML/CSS/JavaScript and frameworks like React.</li>
+        <li>Understanding of responsive and accessible UI design.</li>
+        <li>Minimum Years of expereince: 5 Years</li>
+      </ul>
+      <button onclick="scrollToForm('frontend_developer')">Apply</button>
+    </div>
+
+
+    <br>
+
     <form id="jobForm">
       <label for="name">Candidate Name</label>
       <input type="text" id="name" name="name" required>
 
-      <label for="email">Email ID</label>
-      <input type="email" id="email" name="email" required>
-
       <label for="experience">Years of Experience</label>
       <input type="number" id="experience" name="experience" min="0" required>
 
-      <label for="role">Job Role (Applying For)</label>
-      <input type="text" id="role" name="role" required>
+      <label for="role">Job Role (Applying For):</label>
+      <select id="role" name="role" required>
+        <option value="">--Select a Role--</option>
+        <option value="software_engineer">Software Engineer</option>
+        <option value="frontend_developer">Frontend Developer</option>
+        <option value="backend_developer">Backend Developer</option>
+        <option value="fullstack_developer">Fullstack Developer</option>
+        <option value="data_scientist">Data Scientist</option>
+        <option value="ai_ml_engineer">AI/ML Engineer</option>
+        <option value="devops_engineer">DevOps Engineer</option>
+        <option value="ui_ux_designer">UI/UX Designer</option>
+        <option value="project_manager">Project Manager</option>
+        <option value="qa_engineer">QA Engineer</option>
+        <option value="VLSI_design_DV">VLSI_design_DV</option>
+      </select>
 
       <label for="resume">Upload Resume</label>
       <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
@@ -166,39 +211,78 @@
       <label for="cover">Cover Letter</label>
       <textarea id="cover" name="cover" rows="5" placeholder="Write your cover letter here..." required></textarea>
 
+      
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email" required>
+
       <button type="submit">Submit Application</button>
     </form>
 
     <div class="thank-you" id="thankYouMessage">
-      ✅ Thank you for applying! We will review your application shortly.
+
+      <p><strong>Dear <span id="candidateName"></span>,</strong></p>
+
+
+      Thank you for applying for the position of <strong><span id="jobTitle"></span></strong> at YAROK14.
+      We have received your application, and our Talent Acquisition Team will carefully review your qualifications.
+      </p>
+
+      <p> If your experience and skills align with our current needs, a recruiter will reach out to you for the next
+        steps
+        in the process. Due to the high volume of applications we receive, it may take some time for us to get back to
+        all
+        candidates.</p>
+
+      <p>
+        In the meantime, we encourage you to explore more about YAROK14 and other opportunities on our career's website:
+        👉https://bibinnbiji.github.io/yarok14/careers.html
+      </p>
+
+      <p> We appreciate your interest in joining our team and thank you again for considering a career with us.</p>
+
+      <l>Best regards,</l>
+      <l> YAROK14, Talent Acquisition Team</l>
+
+
     </div>
   </div>
 
   <footer>
     <p>&copy; 2025 Yarok14. VLSI and AI Hardware Experts. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/company/yarok14" target="_blank">
-        <img src="linkedin.png" alt="LinkedIn" width="40" height="40">
-      </a>
-      <a href="https://www.instagram.com/yarok_14" target="_blank">
-        <img src="instagram.png" alt="Instagram" width="40" height="40">
-      </a>
-      <a href="https://www.github.com/BIBINNBIJI" target="_blank">
-        <img src="github.png" alt="GitHub" width="40" height="40">
-      </a>
-    </div>
   </footer>
 
   <script>
+
+    function scrollToForm(roleValue) {
+      const form = document.getElementById('jobForm');
+      const roleSelect = document.getElementById('role');
+      roleSelect.value = roleValue;
+      form.scrollIntoView({ behavior: 'smooth' });
+    }
     const form = document.getElementById('jobForm');
     const thankYou = document.getElementById('thankYouMessage');
+    const jobTitleSpan = document.getElementById('jobTitle');
+    const candidateNameSpan = document.getElementById('candidateName');
+    const roleSelect = document.getElementById('role');
+    const nameInput = document.getElementById('name');
 
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault(); // Prevent actual submission
-      form.style.display = 'none';
-      thankYou.style.display = 'block';
+
+      const selectedRole = roleSelect.options[roleSelect.selectedIndex].text;
+      const candidateName = nameInput.value.trim();
+
+      if (selectedRole && selectedRole !== "--Select a Role--" && candidateName !== "") {
+        jobTitleSpan.textContent = selectedRole;
+        candidateNameSpan.textContent = candidateName;
+        form.style.display = 'none';
+        thankYou.style.display = 'block';
+      }
     });
   </script>
 
+
+
 </body>
+
 </html>
