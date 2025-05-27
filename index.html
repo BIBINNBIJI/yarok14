@@ -63,8 +63,8 @@
 
     /* Announcement Banner */
     .announcement {
-      background: #e5b509;
-      color: #0a0f1b;
+      background: #343a40;
+      color: #fff;
       text-align: center;
       padding: 10px;
       font-weight: bold;
@@ -107,24 +107,27 @@
       margin: 10px 0;
     }
 
+
     nav {
       display: flex;
       justify-content: center;
-      gap: 50px;
-      margin-top: 20px;
       flex-wrap: wrap;
+      background-color: #e5b509;
+      padding: 10px 0;
     }
 
     nav a {
-      padding: 8px 16px;
-      border: 1px solid #2d5e02;
-      border-radius: 5px;
-      transition: all 0.3s ease;
+      color: #000;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #e5b509;
-      color: #0a0f1b;
+      background-color: #343a40;
+      color: #fff;
     }
 
     /* Section Titles */
@@ -189,6 +192,23 @@
       border-top: 1px solid #1e2a3a;
     }
 
+    .white-button {
+      display: inline-block;
+      background-color: white;
+      color: #000;
+      padding: 8px 16px;
+      border: 2px solid #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .white-button:hover {
+      background-color: #000;
+      color: white;
+    }
+
     footer .social-links a {
       color: #080000;
       margin: 0 8px;
@@ -225,20 +245,17 @@
     <header>
       <h1>Welcome to Yarok14 VLSI Design & Verification and AI ML Remote Services</h1>
     </header>
-
-    <a href="#services">Learn more about our services</a>
+    <a href="#services" class="white-button">Learn more about our services</a>
   </div>
   <nav>
     <a href="#about"><strong>About</strong></a>
     <a href="#services"><strong>VLSI & RF Engineering Services</strong></a>
-    <a href="#ai"><strong>AI, SDE & Data</strong></a>
+    <a href="#ai"><strong>AI ML, SDE & Data</strong></a>
     <a href="#prdct"><strong>Products</strong></a>
     <a href="#csp"><strong>Case studies and Projects</strong></a>
     <a href="#contact"><strong>Contact Us</strong></a>
   </nav>
   <p><img src="YAROK 14 logo cover Page.png" alt="Logo" class="logo-fit"></p>
-
-
 
   <section id="about">
     <h2>About Yarok14</h2>
@@ -260,8 +277,7 @@
     <div class="card" style="margin-top: 30px;">
       <h3>Global VLSI Services</h3>
       <p>We proudly serve clients across United States, Canada, Germany, Netherlands, France, United Kingdom,
-        MiddleEast,
-        Taiwan, Singapore, Japan, South Korea, and Australia along with Indian projects.</p>
+        MiddleEast, Israel, Taiwan, Singapore, Japan, South Korea, and Australia along with Indian projects.</p>
       <h4>How we work:</h4>
       <ul>
         <li>Secure global delivery via cloud-based client tools over VPN</li>
