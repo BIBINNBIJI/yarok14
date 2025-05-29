@@ -124,14 +124,10 @@
             font-size: 1.2em;
         }
 
-        h1 {
-            text-align: center;
-            color: #ffffff;
-        }
-
+        h1,
         h2 {
             text-align: center;
-            color: #6d08d2;
+            color: #333;
         }
 
         footer {
@@ -160,43 +156,35 @@
     </style>
     <link rel="icon" type="image/jpg" href="Yarok14-Stamp.jpg">
     <p><img src="YAROK 14 logo cover Page.png" alt="Logo" class="logo-fit"></p>
-    <div class="announcement">
-        <header>
-            <h1>Careers @ Yarok14</h1>
-        </header>
-        <a href="index.html" class="white-button">Go to Yarok14 Home Page</a>
-    </div>
-
-
-</head>
-
 <body>
     <div class="container">
-        <h2>Apply for the Job</h2>
-        <form method="POST" action="/apply">
-            <label>Name:</label><input type="text" name="name" required>
-            <label>Job Position:</label>
-            <select name="Job">
-                <option>LLMops</option>
-                <option>MLOps</option>
-                <option>Flutter Developer</option>
-            </select>
-            <label>DOB:</label><input type="date" name="dob" required>
-            <label>Experience (Years):</label><input type="number" name="experience" required>
-            <label>Gender:</label>
-            <select name="gender">
-                <option>Male</option>
-                <option>Female</option>
-                <option>Others</option>
-            </select>
-            <label>Email ID:</label><input type="email" name="email" required>
-            <label>Cover Letter:</label><textarea name="cover_letter" required></textarea>
-            <button type="submit">Submit Application</button>
-        </form>
+        <h1>Employer Dashboard</h1>
+        <p><a href="/logout">Logout</a></p>
+
+        {% if applications %}
+        {% for app in applications %}
+        <div style="border-bottom: 1px solid #ccc; padding: 10px 0;">
+            <p><strong>Name:</strong> {{ app.name }}</p>
+            <p><strong>Date of Birth:</strong> {{ app.dob }}</p>
+            <p><strong>Experience:</strong> {{ app.experience }} years</p>
+            <p><strong>Gender:</strong> {{ app.gender }}</p>
+            <p><strong>Email:</strong> {{ app.email }}</p>
+            <p><strong>Position Applied:</strong> {{ app.position }}</p>
+            <p><strong>Cover Letter:</strong><br>{{ app.cover_letter }}</p>
+
+            <form method="POST" action="/reject/{{ app.email }}"
+                onsubmit="return confirm('Are you sure you want to reject this applicant?');">
+                <button type="submit">Reject</button>
+            </form>
+        </div>
+        {% endfor %}
+        {% else %}
+        <p>No applications available.</p>
+        {% endif %}
     </div>
     <footer>
-        <p>&copy; 2025 Yarok14. VLSI and AI Hardware Experts. All rights reserved.</p>
-    </footer>
+    <p>&copy; 2025 Yarok14. VLSI and AI Hardware Experts. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>

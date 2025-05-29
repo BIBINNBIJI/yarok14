@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Yarok14 offers ASIC design, FPGA prototyping, and AI/ML services to clients in the US, Europe, and Asia. Trusted partner for remote chip design and verification.">
+  <meta name="keywords"
+    content="VLSI design India, ASIC services, FPGA verification, AI hardware, remote chip design, Yarok14, AI ML startup, generative AI design, UVM verification, Business analytics, Data Science, design, open-source EDA">
+  <title>Yarok14</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #400303;
+      line-height: 1.6;
+    }
+
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .logo-wrapper {
+      display: inline-block;
+    }
+
+    .logo {
+      display: block;
+      margin: 10px auto;
+      height: 50px;
+      /* Adjust as needed */
+    }
+
+    h1,
+    h2 {
+      margin: 10px 0;
+    }
+
+    .h2-logo-container {
+      display: inline-block;
+      text-align: center;
+    }
+
+    .logo-fit {
+      height: 100%;
+      /* Adjust logo height */
+      width: 100%;
+      object-fit: contain;
+    }
+
+    a {
+      color: #041d78;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Announcement Banner */
+    .announcement {
+      background: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    /* Hero Header Image */
+    .hero-header {
+      background-color: #f2f3f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0, 255, 200, 0.1);
+    }
+
+    .hero-logo {
+      max-width: 100%;
+      height: auto;
+      width: 500px;
+      border-radius: 10px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header Text and Nav */
+    header h1,
+    header h2 {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #e5b509;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #343a40;
+      color: #fff;
+    }
+
+    /* Section Titles */
+    section h2 {
+      text-align: center;
+      color: #0928f3;
+      font-size: 2em;
+      margin-top: 40px;
+    }
+
+    /* Centered Paragraph */
+    .centered {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      padding: 10px 20px;
+    }
+
+    /* Card */
+    .card {
+      background: hwb(210 95% 5%);
+      border: 1px solid #1e2a3a;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px;
+      transform: rotateY(20deg);
+      transition: transform 0.5s;
+      box-shadow: 0 8px 20px rgba(224, 240, 7, 0.1);
+
+    }
+
+    .card:hover {
+      transform: rotateY(0deg);
+    }
+
+
+    /* Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Contact Section */
+    #contact a {
+      color: #000000;
+      font-weight: bold;
+    }
+
+    #contact a:hover {
+      color: #00a6a6;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #e5b509;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #1e2a3a;
+    }
+
+    .white-button {
+      display: inline-block;
+      background-color: white;
+      color: #000;
+      padding: 8px 16px;
+      border: 2px solid #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .white-button:hover {
+      background-color: #000;
+      color: white;
+    }
+
+    footer .social-links a {
+      color: #080000;
+      margin: 0 8px;
+    }
+
+    footer .social-links a:hover {
+      color: #00a6a6;
+    }
+
+    /* Responsive Text */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      header h2 {
+        font-size: 1.2em;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+
+
+  <link rel="icon" type="image/jpg" href="Yarok14-Stamp.jpg">
+</head>
+
+<body>
+
+  <div class="announcement">
+    <header>
+      <h1>Welcome to Yarok14 VLSI Design & Verification and AI ML Remote Services</h1>
+    </header>
+    <a href="index.html" class="white-button">Back to Home Page</a>
+  </div>
+  <nav>
+    <a href="#founder"><strong>Meet Our Founder & Team</strong></a>
+    <a href="#Problem_sovling"><strong>How We Solve Your Challenges</strong></a>
+    <a href="#Why_yarok14"><strong>Why Choose Yarok14 Technologies?</strong></a>
+    <a href="#Tech_stacks"><strong>Our Cutting-Edge Tech Stacks</strong></a>
+    <a href="#engmnt_models"><strong>Flexible Engagement & Pricing Models</strong></a>
+    <a href="#Our_Clients"><strong>Trusted by Our Clients</strong></a>
+    <a href="#contact"><strong>Get in Touch With Us</strong></a>
+  </nav>
+  <p><img src="YAROK 14 logo cover Page.png" alt="Logo" class="logo-fit"></p>
+
+  <section id="founder">
+    <h2>Meet Our Founder & Team</h2>
+    <div>
+      <p class="centered">
+        Yarok14 Technologies is founded by <strong>Bibin N Biji</strong>, a VLSI, AI ML specialist with over 6 years of
+        experience in RTL design,
+        UVM-based verification, and automation for global clients. Backed by hands-on startup and freelance delivery
+        experience,
+        Bibin leads a growing team of dedicated engineers.
+        <br><br>
+        Our core team includes experts in <strong>Design Verification (UVM/SystemVerilog)</strong>, <strong>RTL/FPGA
+          design</strong>,
+        <strong>Design for Testability (Scan, ATPG, MBIST)</strong>, and <strong>Automation & AI/ML modeling</strong>.
+        Recruited from top-tier Indian colleges, our engineers combine academic excellence with practical
+        problem-solving.
+        <br><br>
+        From our base in Kottayam, Kerala, we deliver cost-efficient, secure, and scalable engineering services to
+        semiconductor and AI/ML clients worldwide — powered by remote collaboration, startup agility, and a shared
+        mission
+        to build high-impact technology solutions. Yarok14 is Government of India-recognized MSME, registered under the
+        Udyan scheme. (UDYAM-KL-07-0047589)
+      </p>
+
+      <!-- Hidden LinkedIn link -->
+      <div style="text-align: center;">
+        <a href="https://www.linkedin.com/in/bibin-n-biji-28a100337/" target="_blank" style="text-decoration: none;">
+          <img src="linkedin.png" alt="LinkedIn" width="20" height="20" style="vertical-align: middle;">
+          <span style="font-size: 20px; color: black; vertical-align: middle;">LinkedIn</span>
+        </a>
+      </div>
+
+    </div>
+
+
+
+    <div class="card" style="margin-top: 30px;">
+      <h3>Global VLSI Services</h3>
+      <p><strong>
+      We proudly serve clients across the United States, Canada, Germany, the Netherlands, France, the United Kingdom,
+      the Middle East, Israel, Taiwan, Singapore, Japan, South Korea, and Australia — alongside our growing portfolio of Indian projects.
+    </strong></p>
+      <h4><strong>How we work:</strong></h4>
+      <ul>
+        <li><strong>Secure global delivery via cloud-based client tools over VPN</strong></li>
+        <li><strong>Integration of open-source EDA tools to reduce cost and accelerate development</strong></li>
+        <li><strong>Flexible models — hourly, fixed-price, or project-based</strong></li>
+        <li><strong>Proven experience on IP, ASIC, FPGA projects</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="Problem_sovling">
+    <h2>How We Solve Your Challenges</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>VLSI Design & Verification (RTL, UVM, DFT, Physical Design PnR-ready)</h3>
+        <p>We provide RTL design, UVM-based verification, DFT insertion, and Physical Design support ready for tape-out.
+        </p>
+        <p><img src="asic_design_flow.png" alt="Logo" class="logo-fit">
+          <img src="lightelligence.jpg" alt="Logo" class="logo-fit">
+        </p>
+      </div>
+      <div class="card">
+        <h3>Embedded Systems & IoT (Firmware, PCB, Thejas32/ARIES, STM32 boards)</h3>
+        <p>We design low-power firmware, custom PCBs, and real-time applications using ARIES/Thejas32, STM32, and other
+          microcontrollers.</p>
+        <p><img src="aries_V1.png" alt="Logo" class="logo-fit"></p>
+      </div>
+      <div class="card">
+        <h3>AI/ML Development (Model design, MLOps, edge AI)</h3>
+        <p>We build intelligent models, deploy MLOps pipelines, and optimize AI for edge devices.</p>
+        <p><img src="LLMops.png" alt="Logo" class="logo-fit">
+          <img src="MLOps.jpeg" alt="Logo" class="logo-fit">
+        </p>
+      </div>
+      <div class="card">
+        <h3>Custom Web & flutter Applications (Python/Flask, SQL dashboards, automation tools)</h3>
+        <p>We develop efficient Flask-based dashboards, internal tools, and automation systems tailored to your
+          workflows.</p>
+        <p><img src="template1.png" alt="Logo" class="logo-fit">
+          <img src="template2.png" alt="Logo" class="logo-fit">
+        </p>
+      </div>
+      <div class="card">
+        <h3>Sustainable Tech R&D (Biomethane, Green Energy Electronics)</h3>
+        <p>We research and develop electronics and control systems for bio-energy and green energy applications.</p>
+        <p><img src="green_chip.jpg" alt="Logo" class="logo-fit">
+          <img src="greentech.jpg" alt="Logo" class="logo-fit">
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="Why_yarok14">
+    <h2>Why Choose Yarok14 Technologies?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>RTL Design & Integration</h3>
+        <p>Custom Verilog/SystemVerilog RTL blocks, Linting, CDC checks, and synthesis preparation.</p>
+        <p><strong>Specialties:</strong> Fabless semiconductor teams, SoC design houses</p>
+      </div>
+      <div class="card">
+        <h3>Design Verification (DV)</h3>
+        <p>UVM-based testbenches, assertions, scoreboards, coverage (FC, SC), and formal verification.</p>
+        <p><strong>Specialties:</strong> IP vendors, verification startups</p>
+      </div>
+      <div class="card">
+        <h3>Design for Testability (DFT)</h3>
+        <p>Scan insertion, ATPG, MBIST, JTAG, and boundary scan integration using industry DFT tools.</p>
+        <p><strong>Specialties:</strong> ASIC/SoC test teams</p>
+      </div>
+      <div class="card">
+        <h3>Toolchain Automation</h3>
+        <p>Automated Jenkins flows, Python/Perl scripting, regression setup, and log parsing pipelines.</p>
+        <p><strong>Specialties:</strong> QA and DV infrastructure teams</p>
+      </div>
+      <div class="card">
+        <h3>AI/ML Modeling</h3>
+        <p>TensorFlow and PyTorch-based pipelines for model training and on-chip inference design.</p>
+        <p><strong>Specialties:</strong> Edge AI, vision, and embedded ML use-cases</p>
+      </div>
+      <div class="card">
+        <h3>Client Tool Access</h3>
+        <p>Secure VPN-based access under NDA ensures strict confidentiality and tool license compliance.</p>
+      </div>
+
+      <div style="text-align: center;">
+        <h2>Why Choose Us?</h2>
+        <p>
+          💡 Focused VLSI & AI/ML niche <br>
+          🌐 Remote-first delivery (Git, Zoom, VPN) <br>
+          🚀 Pilot-first, scale-fast approach <br>
+          💰 MSME cost advantage <br>
+          🛡️ NDA-ready workflows <br>
+          🕒 24×7 availability — PST & IST timezone coverage
+        </p>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+
+  <section id="Tech_stacks">
+    <h2>Our Cutting-Edge Tech Stacks</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><br><br>Toos, Skills and Technologies<br><br></h3>
+        <div>
+
+          <strong>Hardware/EDA: SystemVerilog, UVM, Cadence, Synopsys, QuestaSim</strong><br><br>
+
+          <strong>AI/ML: Python, PyTorch, TensorFlow, ONNX, OpenCV</strong><br><br>
+
+          <strong>Embedded: C/C++, ARM, RISC-V, Thejas32, FreeRTOS</strong><br><br>
+
+          <strong>flutter/Web & Backend: Flask, FastAPI, SQLite, HTML/CSS</strong><br><br>
+
+          <strong>Tools: Git, Docker, VS Code, GitHub Actions</strong><br><br>
+
+          </p>
+        </div>
+
+
+  </section>
+
+  <section id="engmnt_models">
+    <h2 style="text-align: center;">Flexible Engagement & Pricing Models</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>VLSI Design & Verification</h3>
+        <p>Includes RTL design, simulation, synthesis, and verification.</p>
+        <ul>
+          <li>Hourly: $15 to $25</li>
+          <li>Mini Project: $300 to $500</li>
+          <li>Small Project: $600 to $1000</li>
+          <li>Medium Project: $1200 to $2500</li>
+          <li>Large Project: $3000+</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>AI / ML Solutions</h3>
+        <p>Custom ML models, training pipelines, inference engines, optimization.</p>
+        <ul>
+          <li>Hourly: $12 to $20</li>
+          <li>Mini Project: $250 to $400</li>
+          <li>Small Project: $500 to $900</li>
+          <li>Medium Project: $1000 to $2000</li>
+          <li>Large Project: $2500+</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Embedded System Design</h3>
+        <p>Firmware development, board bring-up, IoT edge devices.</p>
+        <ul>
+          <li>Hourly: $10 to $18</li>
+          <li>Mini Project: $200 to $400</li>
+          <li>Small Project: $500 to $800</li>
+          <li>Medium Project: $900 to $1800</li>
+          <li>Large Project: $2000+</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Software Development (SDE)</h3>
+        <p>Web apps, APIs, backend systems, automation tools.</p>
+        <ul>
+          <li>Hourly: $10 to $20</li>
+          <li>Mini Project: $150t to $300</li>
+          <li>Small Project: $400 to $800</li>
+          <li>Medium Project: $900 to $1800</li>
+          <li>Large Project: $2000+</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div style="text-align: center;">
+    <p>
+      <strong>Key Considerations:</strong><br><br>
+      These prices are competitive startup rates, approx. 30 to 50% lower than typical market rates.<br><br>
+      A “Mini Project” is assumed to be less than 1 week of effort, “Small” is 1 to 2 weeks, “Medium” is 2 to 4
+      weeks, and “Large” is anything beyond a month.
+    </p>
+  </div>
+
+  <section id="Our_Clients">
+    <h2>Trusted by Our Clients</h2>
+
+
+    <div class="grid">
+      <div class="card">
+        <h3>
+          <p> Indian startups & research labs in AI, IoT, and clean tech
+          </p>
+          <p> Global chip design & EDA teams needing offshore verification
+          </p>
+          <p> Academia & Innovators working on next-gen systems
+          </p>
+        </h3>
+        <div class="grid">
+          <p><img src="Nvidia.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="qualcomm.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="intel.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="amd.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="broadcom.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="altran.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="on.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="aricent.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="apple.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="lattice.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="mediaTek.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="cypress.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="renesas.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="samsung.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="synopsys.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="stm.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="tower_semicon.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="sondrel.png" alt="Logo" class="logo-fit"></p>
+          <p><img src="wipro.png" alt="Logo" class="logo-fit"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch With Us</h2>
+    <p class="centered">
+      If you're looking to accelerate tapeouts, improve verification coverage, reduce costs with open-source
+      integration, or prototype faster on FPGA, let's connect!
+    </p>
+    <p class="centered">
+      Email: <a href="mailto: contacts.yarok14@gmail.com">contacts.yarok14@gmail.com</a> | Phone: <a
+        href="callto: +91-9526932961">+91-9526932961</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; <span style="font-size: 20px; color: black;">2025 Yarok14. VLSI and AI Hardware Experts. All rights
+        reserved.</span></p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/company/yarok14" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn" width="20" height="20">
+        <span style="font-size: 20px; color: black;">LinkedIn</span>
+      </a>
+      <a href="https://www.instagram.com/yarok_14" target="_blank">
+        <img src="instagram.png" alt="Instagram" width="20" height="20">
+        <span style="font-size: 20px; color: black;">Instagram</span>
+      </a>
+      <a href="https://www.github.com/BIBINNBIJI" target="_blank">
+        <img src="github.png" alt="GitHub" width="20" height="20">
+        <span style="font-size: 20px; color: black;">GitHub</span>
+      </a>
+      <a href="https://x.com/BBiji34944" target="_blank">
+        <img src="X.png" alt="X" width="20" height="20">
+        <span style="font-size: 20px; color: black;">X</span>
+      </a>
+      <a href="https://www.youtube.com/channel/UCWmCcm1UlDJJfz0aB9B_a0A" target="_blank">
+        <img src="youtube.png" alt="youtube" width="20" height="20">
+        <span style="font-size: 20px; color: black;">youtube</span>
+      </a>
+      <a href="careers.html" target="_blank">
+        <img src="Career-icon.png" alt="Careers" width="20" height="20">
+        <span style="font-size: 20px; color: black;">Careers</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
