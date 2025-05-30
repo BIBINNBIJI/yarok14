@@ -219,20 +219,25 @@
     }
 
     .carousel-wrapper {
-      overflow: hidden;
+      position: relative;
       width: 100%;
-      background: #f9fafc;
+      overflow: hidden;
+      background: #fff;
       padding: 20px 0;
-      box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
-      border-top: 2px solid #e0e0e0;
-      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .carousel-container {
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
     }
 
     .carousel-track {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 60px;
-      animation: scroll-left 25s linear infinite;
+      padding: 10px;
     }
 
     .carousel-track img {
@@ -246,15 +251,40 @@
       transform: scale(1.1);
     }
 
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(0%);
-      }
-
-      100% {
-        transform: translateX(-50%);
-      }
+    /* Invisible anchor scroll targets */
+    .carousel-track span[id] {
+      display: inline-block;
+      width: 1px;
+      height: 1px;
     }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 24px;
+      padding: 10px 15px;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .carousel-btn.left {
+      left: 10px;
+    }
+
+    .carousel-btn.right {
+      right: 10px;
+    }
+
+    .carousel-btn:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
 
 
     /* Responsive Text */
@@ -543,25 +573,73 @@
           <p> Academia & Innovators working on next-gen systems
           </p>
         </h3>
-        <div class="carousel-wrapper">
-          <div class="carousel-track">
-            <img src="Nvidia.png" alt="Client 1" />
-            <img src="qualcomm.png" alt="Client 2" />
-            <img src="intel.png" alt="Client 3" />
-            <img src="amd.png" alt="Client 4" />
-            <img src="samsung.png" alt="Client 5" />
-            <img src="broadcom.png" alt="Client 6" />
-            <!-- Duplicate the same set to create a loop effect -->
-            <img src="mediaTek.png" alt="Client 1" />
-            <img src="wipro.png" alt="Client 2" />
-            <img src="amazon.jpg" alt="Client 3" />
-            <img src="google.jpg" alt="Client 4" />
-            <img src="tcs.png" alt="Client 5" />
-            <img src="tower_semicon.png" alt="Client 6" />
 
+        <div class="carousel-wrapper">
+
+          <!-- Left Arrow -->
+          <a href="#left" class="carousel-btn left">&#10094;</a>
+
+          <!-- Scrollable Container -->
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <!-- Left Anchor (Scroll Target) -->
+              <span id="left"></span>
+
+              <!-- Logos -->
+              <img src="altran.png" alt="Client 1" />
+              <img src="amazon.jpg" alt="Client 2" />
+              <img src="amd.png" alt="Client 3" />
+              <img src="apple.png" alt="Client 4" />
+              <img src="aramco.jpg" alt="Client 5" />
+              <img src="aricent.png" alt="Client 6" />
+              <img src="bmw.png" alt="Client 7" />
+              <img src="broadcom.png" alt="Client 8" />
+              <img src="cypress.png" alt="Client 9" />
+              <img src="drdo.png" alt="Client 10" />
+              <img src="flipkart.jpg" alt="Client 11" />
+              <img src="ford.png" alt="Client 12" />
+              <img src="ge.png" alt="Client 13" />
+              <img src="google.jpg" alt="Client 14" />
+              <img src="huawei.png" alt="Client 15" />
+              <img src="intel.png" alt="Client 16" />
+              <img src="isro.jpg" alt="Client 17" />
+              <img src="lattice.png" alt="Client 18" />
+              <img src="marvell.jpg" alt="Client 19" />
+              <img src="mediaTek.png" alt="Client 20" />
+              <img src="ms.jpg" alt="Client 21" />
+              <img src="nvidia.png" alt="Client 22" />
+              <img src="on.png" alt="Client 23" />
+              <img src="qualcomm.png" alt="Client 24" />
+              <img src="railways.jpg" alt="Client 25" />
+              <img src="renesas.png" alt="Client 26" />
+              <img src="samsung.png" alt="Client 27" />
+              <img src="shell.png" alt="Client 28" />
+              <img src="sondrel.png" alt="Client 29" />
+              <img src="stm.png" alt="Client 30" />
+              <img src="synopsys.png" alt="Client 31" />
+              <img src="tata.avif" alt="Client 32" />
+              <img src="tcs.png" alt="Client 33" />
+              <img src="tech_mahindra.png" alt="Client 34" />
+              <img src="tesla.jpg" alt="Client 35" />
+              <img src="tower_semicon.png" alt="Client 36" />
+              <img src="wipro.png" alt="Client 37" />
+              <img src="infineon.png" alt="Client 38" />
+
+              <!-- Right Anchor (Scroll Target) -->
+              <span id="right"></span>
+            </div>
           </div>
+
+          <!-- Right Arrow -->
+          <a href="#right" class="carousel-btn right">&#10095;</a>
+
         </div>
+
+
+
       </div>
+    </div>
+    </div>
     </div>
   </section>
 
