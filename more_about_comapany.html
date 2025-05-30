@@ -218,6 +218,45 @@
       color: #00a6a6;
     }
 
+    .carousel-wrapper {
+      overflow: hidden;
+      width: 100%;
+      background: #f9fafc;
+      padding: 20px 0;
+      box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+      border-top: 2px solid #e0e0e0;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .carousel-track {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      animation: scroll-left 25s linear infinite;
+    }
+
+    .carousel-track img {
+      height: 60px;
+      max-width: 120px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-track img:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+
     /* Responsive Text */
     @media (max-width: 768px) {
       header h1 {
@@ -296,9 +335,11 @@
     <div class="card" style="margin-top: 30px;">
       <h3>Global VLSI Services</h3>
       <p><strong>
-      We proudly serve clients across the United States, Canada, Germany, the Netherlands, France, the United Kingdom,
-      the Middle East, Israel, Taiwan, Singapore, Japan, South Korea, and Australia — alongside our growing portfolio of Indian projects.
-    </strong></p>
+          We proudly serve clients across the United States, Canada, Germany, the Netherlands, France, the United
+          Kingdom,
+          the Middle East, Israel, Taiwan, Singapore, Japan, South Korea, and Australia — alongside our growing
+          portfolio of Indian projects.
+        </strong></p>
       <h4><strong>How we work:</strong></h4>
       <ul>
         <li><strong>Secure global delivery via cloud-based client tools over VPN</strong></li>
@@ -502,26 +543,23 @@
           <p> Academia & Innovators working on next-gen systems
           </p>
         </h3>
-        <div class="grid">
-          <p><img src="Nvidia.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="qualcomm.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="intel.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="amd.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="broadcom.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="altran.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="on.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="aricent.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="apple.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="lattice.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="mediaTek.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="cypress.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="renesas.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="samsung.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="synopsys.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="stm.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="tower_semicon.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="sondrel.png" alt="Logo" class="logo-fit"></p>
-          <p><img src="wipro.png" alt="Logo" class="logo-fit"></p>
+        <div class="carousel-wrapper">
+          <div class="carousel-track">
+            <img src="Nvidia.png" alt="Client 1" />
+            <img src="qualcomm.png" alt="Client 2" />
+            <img src="intel.png" alt="Client 3" />
+            <img src="amd.png" alt="Client 4" />
+            <img src="samsung.png" alt="Client 5" />
+            <img src="broadcom.png" alt="Client 6" />
+            <!-- Duplicate the same set to create a loop effect -->
+            <img src="mediaTek.png" alt="Client 1" />
+            <img src="wipro.png" alt="Client 2" />
+            <img src="amazon.jpg" alt="Client 3" />
+            <img src="google.jpg" alt="Client 4" />
+            <img src="tcs.png" alt="Client 5" />
+            <img src="tower_semicon.png" alt="Client 6" />
+
+          </div>
         </div>
       </div>
     </div>
