@@ -231,6 +231,17 @@
       scroll-behavior: smooth;
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
+
+      /* Hide native scrollbars and overlay arrows */
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+    }
+
+    .carousel-container::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari, Edge */
     }
 
     .carousel-track {
@@ -251,18 +262,17 @@
       transform: scale(1.1);
     }
 
-    /* Invisible anchor scroll targets */
+    /* Invisible scroll anchor targets */
     .carousel-track span[id] {
       display: inline-block;
       width: 1px;
       height: 1px;
     }
 
+    /* Arrows aligned to the bottom */
     .carousel-btn {
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      text-decoration: none;
+      bottom: 5px;
       background-color: rgba(0, 0, 0, 0.5);
       color: white;
       font-size: 24px;
@@ -270,20 +280,21 @@
       z-index: 10;
       cursor: pointer;
       user-select: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
     }
 
     .carousel-btn.left {
-      left: 10px;
+      left: 5px;
     }
 
     .carousel-btn.right {
-      right: 10px;
+      right: 5px;
     }
 
     .carousel-btn:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }
-
 
 
 
@@ -560,7 +571,7 @@
   </div>
 
   <section id="Our_Clients">
-    <h2>Trusted by Our Clients</h2>
+    <h2>Trusted by Our Clients(Targetted & Dream Clients)</h2>
 
 
     <div class="grid">
@@ -624,7 +635,10 @@
               <img src="tower_semicon.png" alt="Client 36" />
               <img src="wipro.png" alt="Client 37" />
               <img src="infineon.png" alt="Client 38" />
-               <img src="nxp.avif" alt="Client 39" />
+              <img src="nxp.avif" alt="Client 39" />
+              <img src="microchip.png" alt="Client 40" />
+              <img src="raytheon.png" alt="Client 41" />
+              <img src="rafael.png" alt="Client 42" />
 
               <!-- Right Anchor (Scroll Target) -->
               <span id="right"></span>

@@ -29,7 +29,10 @@
       "default",
       {
         "ignore": [
-          "-webkit-overflow-scrolling"
+          "-webkit-overflow-scrolling",
+          "user-select",
+          "scrollbar-width",
+          "scrollbar-width: none"
         ]
       }
     ]
