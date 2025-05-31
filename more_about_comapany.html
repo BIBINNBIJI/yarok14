@@ -218,6 +218,12 @@
       color: #00a6a6;
     }
 
+    section p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+
     .carousel-wrapper {
       position: relative;
       width: 100%;
@@ -394,43 +400,67 @@
   <section id="Problem_sovling">
     <h2>How We Solve Your Challenges</h2>
     <div class="grid">
+
       <div class="card">
         <h3>VLSI Design & Verification (RTL, UVM, DFT, Physical Design PnR-ready)</h3>
         <p>We provide RTL design, UVM-based verification, DFT insertion, and Physical Design support ready for tape-out.
         </p>
-        <p><img src="asic_design_flow.png" alt="Logo" class="logo-fit">
-          <img src="lightelligence.jpg" alt="Logo" class="logo-fit">
-        </p>
-      </div>
-      <div class="card">
+
+
         <h3>Embedded Systems & IoT (Firmware, PCB, Thejas32/ARIES, STM32 boards)</h3>
         <p>We design low-power firmware, custom PCBs, and real-time applications using ARIES/Thejas32, STM32, and other
           microcontrollers.</p>
-        <p><img src="aries_V1.png" alt="Logo" class="logo-fit"></p>
-      </div>
-      <div class="card">
+
         <h3>AI/ML Development (Model design, MLOps, edge AI)</h3>
         <p>We build intelligent models, deploy MLOps pipelines, and optimize AI for edge devices.</p>
-        <p><img src="LLMops.png" alt="Logo" class="logo-fit">
-          <img src="MLOps.jpeg" alt="Logo" class="logo-fit">
-        </p>
-      </div>
-      <div class="card">
+
+
+
         <h3>Custom Web & flutter Applications (Python/Flask, SQL dashboards, automation tools)</h3>
         <p>We develop efficient Flask-based dashboards, internal tools, and automation systems tailored to your
           workflows.</p>
-        <p><img src="template1.png" alt="Logo" class="logo-fit">
-          <img src="template2.png" alt="Logo" class="logo-fit">
-        </p>
-      </div>
-      <div class="card">
+
         <h3>Sustainable Tech R&D (Biomethane, Green Energy Electronics)</h3>
         <p>We research and develop electronics and control systems for bio-energy and green energy applications.</p>
-        <p><img src="green_chip.jpg" alt="Logo" class="logo-fit">
-          <img src="greentech.jpg" alt="Logo" class="logo-fit">
-        </p>
-      </div>
-    </div>
+
+        <!-- Carousel Container Only (No Card) -->
+        <div class="carousel-wrapper" style="width: 100%; overflow-x: auto;">
+
+          <div class="carousel-container" style="height: 300px; width: 100%; overflow-x: auto; white-space: nowrap;">
+            <div class="carousel-track"
+              style="display: flex; align-items: center; gap: 1rem; height: 100%; width: max-content;">
+
+              <!-- Left Anchor -->
+              <span id="left"></span>
+
+              <!-- Images -->
+              <img src="green_chip.jpg" alt="Solution 1"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="greentech.jpg" alt="Solution 2"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="template1.png" alt="Solution 3"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="template2.png" alt="Solution 4"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="LLMops.png" alt="Solution 5"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="MLOps.jpeg" alt="Solution 6"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="aries_V1.png" alt="Solution 7"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="asic_design_flow.png" alt="Solution 8"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="lightelligence.jpg" alt="Solution 9"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+
+              <!-- Right Anchor -->
+              <span id="right"></span>
+            </div>
+          </div>
+        </div>
+
+
+
   </section>
 
   <section id="Why_yarok14">
@@ -440,46 +470,38 @@
         <h3>RTL Design & Integration</h3>
         <p>Custom Verilog/SystemVerilog RTL blocks, Linting, CDC checks, and synthesis preparation.</p>
         <p><strong>Specialties:</strong> Fabless semiconductor teams, SoC design houses</p>
-      </div>
-      <div class="card">
+
         <h3>Design Verification (DV)</h3>
         <p>UVM-based testbenches, assertions, scoreboards, coverage (FC, SC), and formal verification.</p>
         <p><strong>Specialties:</strong> IP vendors, verification startups</p>
-      </div>
-      <div class="card">
+
         <h3>Design for Testability (DFT)</h3>
         <p>Scan insertion, ATPG, MBIST, JTAG, and boundary scan integration using industry DFT tools.</p>
         <p><strong>Specialties:</strong> ASIC/SoC test teams</p>
-      </div>
-      <div class="card">
+
         <h3>Toolchain Automation</h3>
         <p>Automated Jenkins flows, Python/Perl scripting, regression setup, and log parsing pipelines.</p>
         <p><strong>Specialties:</strong> QA and DV infrastructure teams</p>
-      </div>
-      <div class="card">
+
         <h3>AI/ML Modeling</h3>
         <p>TensorFlow and PyTorch-based pipelines for model training and on-chip inference design.</p>
         <p><strong>Specialties:</strong> Edge AI, vision, and embedded ML use-cases</p>
-      </div>
-      <div class="card">
+
         <h3>Client Tool Access</h3>
         <p>Secure VPN-based access under NDA ensures strict confidentiality and tool license compliance.</p>
+
       </div>
-
-      <div style="text-align: center;">
-        <h2>Why Choose Us?</h2>
-        <p>
-          💡 Focused VLSI & AI/ML niche <br>
-          🌐 Remote-first delivery (Git, Zoom, VPN) <br>
-          🚀 Pilot-first, scale-fast approach <br>
-          💰 MSME cost advantage <br>
-          🛡️ NDA-ready workflows <br>
-          🕒 24 × 7 availability — PST & IST timezone coverage
-        </p>
-      </div>
-
-
     </div>
+  </section>
+
+  <section style="text-align: center; font-family: Arial, sans-serif; max-width: 400px; margin: auto;">
+    <h2>Why Choose Us?</h2>
+    <p>💡 Focused VLSI & AI/ML niche</p>
+    <p>🌐 Remote-first delivery (Git, Zoom, VPN)</p>
+    <p>🚀 Pilot-first, scale-fast approach</p>
+    <p>💰 MSME cost advantage</p>
+    <p>🛡️ NDA-ready workflows</p>
+    <p>🕒 24 × 7 availability — PST & IST timezone coverage</p>
   </section>
 
 
@@ -501,57 +523,53 @@
           <strong>flutter/Web & Backend: Flask, FastAPI, SQLite, HTML/CSS</strong><br><br>
 
           <strong>Tools: Git, Docker, VS Code, GitHub Actions</strong><br><br>
-          <div class="carousel-wrapper">
 
-            <!-- Left Arrow -->
-            <!-- <a href="#left" class="carousel-btn left">&#10094;</a> -->
 
-            <!-- Scrollable Container -->
-            <div class="carousel-container">
-              <div class="carousel-track">
-                <!-- Left Anchor (Scroll Target) -->
+
+          <div class="carousel-wrapper" style="width: 100%; overflow-x: auto;">
+
+            <div class="carousel-container" style="height: 200px; width: 100%; overflow-x: auto; white-space: nowrap;">
+              <div class="carousel-track"
+                style="display: flex; align-items: center; gap: 1rem; height: 100%; width: max-content;">
+
+                <!-- Left Anchor -->
                 <span id="left"></span>
 
                 <!-- Logos -->
+                <img src="C++.png" alt="Tool 1" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="cadence_SV.png" alt="Tool 2" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="CSS HTML JS.png" alt="Tool 3" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="docker vs code.png" alt="Tool 4" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="fast API SQLite.jpg" alt="Tool 5" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="flask.png" alt="Tool 6" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="FreeRTOS-RISC-V.jpg" alt="Tool 7" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="git.png" alt="Tool 8" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="intel_FV.jpg" alt="Tool 9" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="Linux.png" alt="Tool 10" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="onnx.png" alt="Tool 11" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="openCV.png" alt="Tool 12" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="Python-Logo.jpg" alt="Tool 13" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="SoC using SV.jpg" alt="Tool 14" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="verilator.png" alt="Tool 15" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="intel_FV_pract.png" alt="Tool 16" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="tensorflow-vs-pytorch.png" alt="Tool 17"
+                  style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="verilog fpga.png" alt="Tool 18" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="systemverilog.jpg" alt="Tool 19" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="json.jpg" alt="Tool 20" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="flutter dart.jpg" alt="Tool 21" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="aws cloud.png" alt="Tool 22" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="Tcl Tk.gif" alt="Tool 23" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="power BI.jpg" alt="Tool 24" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="all PL.jpg" alt="Tool 25" style="height: 100%; width: auto; object-fit: contain;" />
 
-
-                <img src="C++.png" alt="Tool 1" />
-                <img src="cadence_SV.png" alt="Tool 2" />
-                <img src="CSS HTML JS.png" alt="Tool 3" />
-                <img src="docker vs code.png" alt="Tool 4" />
-                <img src="fast API SQLite.jpg" alt="Tool 5" />
-                <img src="flask.png" alt="Tool 6" />
-                <img src="FreeRTOS-RISC-V.jpg" alt="Tool 7" />
-                <img src="git.png" alt="Tool 8" />
-                <img src="intel_FV.jpg" alt="Tool 9" />
-                <img src="Linux.png" alt="Tool 10" />
-                <img src="onnx.png" alt="Tool 11" />
-                <img src="openCV.png" alt="Tool 12" />
-                <img src="Python-Logo.jpg" alt="Tool 13" />
-                <img src="SoC using SV.jpg" alt="Tool 14" />
-                <img src="verilator.png" alt="Tool 15" />
-                <img src="intel_FV_pract.png" alt="Tool 16" />
-                <img src="tensorflow-vs-pytorch.png" alt="Tool 17" />
-                <img src="verilog fpga.png" alt="Tool 18" />
-                <img src="systemverilog.jpg" alt="Tool 19" />
-                <img src="json.jpg" alt="Tool 20" />
-                <img src="flutter dart.jpg" alt="Tool 21" />
-                <img src="aws cloud.png" alt="Tool 22" />
-                <img src="Tcl Tk.gif" alt="Tool 23" />
-                <img src="power BI.jpg" alt="Tool 24" />
-                <img src="all PL.jpg" alt="Tool 25" />
-
-
-                <!-- Right Anchor (Scroll Target) -->
+                <!-- Right Anchor -->
                 <span id="right"></span>
+
               </div>
             </div>
-
-            <!-- Right Arrow -->
-            <!-- <a href="#right" class="carousel-btn right">&#10095;</a> -->
-
           </div>
-          </p>
+
         </div>
 
 
@@ -634,69 +652,105 @@
           </p>
         </h3>
 
-        <div class="carousel-wrapper">
+        <div class="carousel-wrapper" style="width: 100%; overflow-x: auto;">
 
-          <!-- Left Arrow -->
-          <!-- <a href="#left" class="carousel-btn left">&#10094;</a> -->
+          <div class="carousel-container" style="height: 200px; width: 100%; overflow-x: auto; white-space: nowrap;">
+            <div class="carousel-track"
+              style="display: flex; align-items: center; gap: 1rem; height: 100%; width: max-content;">
 
-          <!-- Scrollable Container -->
-          <div class="carousel-container">
-            <div class="carousel-track">
-              <!-- Left Anchor (Scroll Target) -->
+              <!-- Left Anchor -->
               <span id="left"></span>
 
-              <!-- Logos -->
-              <img src="altran.png" alt="Client 1" />
-              <img src="amazon.jpg" alt="Client 2" />
-              <img src="amd.png" alt="Client 3" />
-              <img src="apple.png" alt="Client 4" />
-              <img src="aramco.jpg" alt="Client 5" />
-              <img src="aricent.png" alt="Client 6" />
-              <img src="bmw.png" alt="Client 7" />
-              <img src="broadcom.png" alt="Client 8" />
-              <img src="cypress.png" alt="Client 9" />
-              <img src="drdo.png" alt="Client 10" />
-              <img src="flipkart.jpg" alt="Client 11" />
-              <img src="ford.png" alt="Client 12" />
-              <img src="ge.png" alt="Client 13" />
-              <img src="google.jpg" alt="Client 14" />
-              <img src="huawei.png" alt="Client 15" />
-              <img src="intel.png" alt="Client 16" />
-              <img src="isro.jpg" alt="Client 17" />
-              <img src="lattice.png" alt="Client 18" />
-              <img src="marvell.jpg" alt="Client 19" />
-              <img src="mediaTek.png" alt="Client 20" />
-              <img src="ms.jpg" alt="Client 21" />
-              <img src="Nvidia.png" alt="Client 22" />
-              <img src="on.png" alt="Client 23" />
-              <img src="qualcomm.png" alt="Client 24" />
-              <img src="railways.jpg" alt="Client 25" />
-              <img src="renesas.png" alt="Client 26" />
-              <img src="samsung.png" alt="Client 27" />
-              <img src="shell.png" alt="Client 28" />
-              <img src="sondrel.png" alt="Client 29" />
-              <img src="stm.png" alt="Client 30" />
-              <img src="synopsys.png" alt="Client 31" />
-              <img src="tata.avif" alt="Client 32" />
-              <img src="tcs.png" alt="Client 33" />
-              <img src="tech_mahindra.png" alt="Client 34" />
-              <img src="tesla.jpg" alt="Client 35" />
-              <img src="tower_semicon.png" alt="Client 36" />
-              <img src="wipro.png" alt="Client 37" />
-              <img src="infineon.png" alt="Client 38" />
-              <img src="nxp.avif" alt="Client 39" />
-              <img src="microchip.png" alt="Client 40" />
-              <img src="raytheon.png" alt="Client 41" />
-              <img src="rafael.png" alt="Client 42" />
+              <!-- Logos (proportional, object-fit, no fixed width) -->
+              <img src="altran.png" alt="Client 1"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="amazon.jpg" alt="Client 2"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="amd.png" alt="Client 3"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="apple.png" alt="Client 4"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="aramco.jpg" alt="Client 5"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="aricent.png" alt="Client 6"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="bmw.png" alt="Client 7"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="broadcom.png" alt="Client 8"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="cypress.png" alt="Client 9"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="drdo.png" alt="Client 10"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="flipkart.jpg" alt="Client 11"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="ford.png" alt="Client 12"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="ge.png" alt="Client 13"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="google.jpg" alt="Client 14"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="huawei.png" alt="Client 15"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="intel.png" alt="Client 16"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="isro.jpg" alt="Client 17"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="lattice.png" alt="Client 18"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="marvell.jpg" alt="Client 19"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="mediaTek.png" alt="Client 20"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="ms.jpg" alt="Client 21"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="Nvidia.png" alt="Client 22"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="on.png" alt="Client 23"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="qualcomm.png" alt="Client 24"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="railways.jpg" alt="Client 25"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="renesas.png" alt="Client 26"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="samsung.png" alt="Client 27"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="shell.png" alt="Client 28"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="sondrel.png" alt="Client 29"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="stm.png" alt="Client 30"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="synopsys.png" alt="Client 31"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="tata.avif" alt="Client 32"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="tcs.png" alt="Client 33"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="tech_mahindra.png" alt="Client 34"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="tesla.jpg" alt="Client 35"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="tower_semicon.png" alt="Client 36"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="wipro.png" alt="Client 37"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="infineon.png" alt="Client 38"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="nxp.avif" alt="Client 39"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="microchip.png" alt="Client 40"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="raytheon.png" alt="Client 41"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="rafael.png" alt="Client 42"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
 
-              <!-- Right Anchor (Scroll Target) -->
+              <!-- Right Anchor -->
               <span id="right"></span>
             </div>
           </div>
-
-          <!-- Right Arrow -->
-          <!-- <a href="#right" class="carousel-btn right">&#10095;</a> -->
-
         </div>
 
 
