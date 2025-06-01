@@ -218,6 +218,92 @@
       color: #00a6a6;
     }
 
+    section p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+
+    .carousel-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: #fff;
+      padding: 20px 0;
+    }
+
+    .carousel-container {
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+
+      /* Hide native scrollbars and overlay arrows */
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+    }
+
+    .carousel-container::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari, Edge */
+    }
+
+    .carousel-track {
+      display: inline-flex;
+      align-items: center;
+      gap: 60px;
+      padding: 10px;
+    }
+
+    .carousel-track img {
+      height: 60px;
+      max-width: 120px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-track img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Invisible scroll anchor targets */
+    .carousel-track span[id] {
+      display: inline-block;
+      width: 1px;
+      height: 1px;
+    }
+
+    /* Arrows aligned to the bottom */
+    .carousel-btn {
+      position: absolute;
+      bottom: 5px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 24px;
+      padding: 10px 15px;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .carousel-btn.left {
+      left: 5px;
+    }
+
+    .carousel-btn.right {
+      right: 5px;
+    }
+
+    .carousel-btn:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+
     /* Responsive Text */
     @media (max-width: 768px) {
       header h1 {
@@ -245,16 +331,21 @@
     <header>
       <h1>Welcome to Yarok14 VLSI Design & Verification and AI ML Remote Services</h1>
     </header>
-    <a href="more_about_comapany.html" class="white-button">Learn more about our services and Company.</a>
   </div>
-  <nav>
-    <a href="#about"><strong>About</strong></a>
-    <a href="#services"><strong>VLSI & RF Engineering Services</strong></a>
-    <a href="#ai"><strong>AI ML, SDE & Data</strong></a>
-    <a href="#prdct"><strong>Products</strong></a>
-    <a href="#csp"><strong>Case studies and Projects</strong></a>
-    <a href="#contact"><strong>Contact Us</strong></a>
-  </nav>
+<nav>
+  <a href="#about"><strong>About</strong></a>
+  <a href="#Problem_sovling"><strong>How We Solve Your Challenges</strong></a>
+  <a href="#Why_yarok14"><strong>Why Choose Yarok14 Technologies?</strong></a>
+  <a href="#founder"><strong>Meet Our Founder & Team</strong></a>
+  <a href="#Our_Clients"><strong>Trusted by Our Clients</strong></a>
+  <a href="#csp"><strong>Case Studies and Projects</strong></a>
+  <a href="#services"><strong>Our Engineering Services</strong></a>
+  <a href="#product"><strong>Products</strong></a>
+  <a href="#engmnt_models"><strong>Flexible Engagement & Pricing Models</strong></a>
+  <a href="#Tech_stacks"><strong>Our Cutting-Edge Tech Stacks</strong></a>
+  <a href="#contact"><strong>Get in Touch With Us</strong></a>
+</nav>
+
   <p><img src="YAROK 14 logo cover Page.png" alt="Logo" class="logo-fit"></p>
 
   <section id="about">
@@ -276,14 +367,378 @@
       modeling, scalable data solutions, and software development expertise tailored to accelerate product development
       and digital transformation.
     </p>
-    <p class="centered">
-      <a href="more_about_comapany.html" class="white-button">Know more about the company</a>
-    </p>
+
   </section>
 
-  <section id="ai">
-    <h2>AI, ML, Software development & Data Services</h2>
+
+  
+    <div class="card" style="margin-top: 30px;">
+      <h3>Global VLSI Services</h3>
+      <p><strong>
+          We proudly serve clients across the United States, Canada, Germany, the Netherlands, France, the United
+          Kingdom,
+          the Middle East, Israel, Taiwan, Singapore, Japan, South Korea, and Australia — alongside our growing
+          portfolio of Indian projects.
+        </strong></p>
+      <h4><strong>How we work:</strong></h4>
+      <ul>
+        <li><strong>Secure global delivery via cloud-based client tools over VPN</strong></li>
+        <li><strong>Integration of open-source EDA tools to reduce cost and accelerate development</strong></li>
+        <li><strong>Flexible models — hourly, fixed-price, or project-based</strong></li>
+        <li><strong>Proven experience on IP, ASIC, FPGA projects</strong></li>
+      </ul>
+    </div>
+  </section>
+
+
+
+
+   <section id="Problem_sovling">
+    <h2>How We Solve Your Challenges</h2>
     <div class="grid">
+
+      <div class="card">
+        <h3>VLSI Design & Verification (RTL, UVM, DFT, Physical Design PnR-ready)</h3>
+        <p>We provide RTL design, UVM-based verification, DFT insertion, and Physical Design support ready for tape-out.
+        </p>
+
+
+        <h3>Embedded Systems & IoT (Firmware, PCB, Thejas32/ARIES, STM32 boards)</h3>
+        <p>We design low-power firmware, custom PCBs, and real-time applications using ARIES/Thejas32, STM32, and other
+          microcontrollers.</p>
+
+        <h3>AI/ML Development (Model design, MLOps, edge AI)</h3>
+        <p>We build intelligent models, deploy MLOps pipelines, and optimize AI for edge devices.</p>
+
+
+
+        <h3>Custom Web & flutter Applications (Python/Flask, SQL dashboards, automation tools)</h3>
+        <p>We develop efficient Flask-based dashboards, internal tools, and automation systems tailored to your
+          workflows.</p>
+
+        <h3>Sustainable Tech R&D (Biomethane, Green Energy Electronics)</h3>
+        <p>We research and develop electronics and control systems for bio-energy and green energy applications.</p>
+
+        <!-- Carousel Container Only (No Card) -->
+        <div class="carousel-wrapper" style="width: 100%; overflow-x: auto;">
+
+          <div class="carousel-container" style="height: 300px; width: 100%; overflow-x: auto; white-space: nowrap;">
+            <div class="carousel-track"
+              style="display: flex; align-items: center; gap: 1rem; height: 100%; width: max-content;">
+
+              <!-- Left Anchor -->
+              <span id="left"></span>
+
+              <!-- Images -->
+              <img src="green_chip.jpg" alt="Solution 1"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="greentech.jpg" alt="Solution 2"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="template1.png" alt="Solution 3"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="template2.png" alt="Solution 4"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="LLMops.png" alt="Solution 5"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="MLOps.jpeg" alt="Solution 6"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="aries_V1.png" alt="Solution 7"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="asic_design_flow.png" alt="Solution 8"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+              <img src="lightelligence.jpg" alt="Solution 9"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain; border-radius: 8px;" />
+
+              <!-- Right Anchor -->
+              <span id="right"></span>
+            </div>
+          </div>
+        </div>
+
+
+
+  </section>
+
+
+   
+
+  <section id="Why_yarok14">
+    <h2>Why Choose Yarok14 Technologies?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>RTL Design & Integration</h3>
+        <p>Custom Verilog/SystemVerilog RTL blocks, Linting, CDC checks, and synthesis preparation.</p>
+        <p><strong>Specialties:</strong> Fabless semiconductor teams, SoC design houses</p>
+
+        <h3>Design Verification (DV)</h3>
+        <p>UVM-based testbenches, assertions, scoreboards, coverage (FC, SC), and formal verification.</p>
+        <p><strong>Specialties:</strong> IP vendors, verification startups</p>
+
+        <h3>Design for Testability (DFT)</h3>
+        <p>Scan insertion, ATPG, MBIST, JTAG, and boundary scan integration using industry DFT tools.</p>
+        <p><strong>Specialties:</strong> ASIC/SoC test teams</p>
+
+        <h3>Toolchain Automation</h3>
+        <p>Automated Jenkins flows, Python/Perl scripting, regression setup, and log parsing pipelines.</p>
+        <p><strong>Specialties:</strong> QA and DV infrastructure teams</p>
+
+        <h3>AI/ML Modeling</h3>
+        <p>TensorFlow and PyTorch-based pipelines for model training and on-chip inference design.</p>
+        <p><strong>Specialties:</strong> Edge AI, vision, and embedded ML use-cases</p>
+
+        <h3>Client Tool Access</h3>
+        <p>Secure VPN-based access under NDA ensures strict confidentiality and tool license compliance.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="text-align: center; font-family: Arial, sans-serif; max-width: 400px; margin: auto;">
+    <h2>Why Choose Us?</h2>
+    <p>💡 Focused VLSI & AI/ML niche</p>
+    <p>🌐 Remote-first delivery (Git, Zoom, VPN)</p>
+    <p>🚀 Pilot-first, scale-fast approach</p>
+    <p>💰 MSME cost advantage</p>
+    <p>🛡️ NDA-ready workflows</p>
+    <p>🕒 24 × 7 availability — PST & IST timezone coverage</p>
+  </section>
+
+
+  <section id="founder">
+    <h2>Meet Our Founder & Team</h2>
+    <div>
+      <p class="centered">
+        Yarok14 Technologies is founded by <strong>Bibin N Biji</strong>, a VLSI, AI ML specialist with over 6 years of
+        experience in RTL design,
+        UVM-based verification, and automation for global clients. Backed by hands-on startup and freelance delivery
+        experience,
+        Bibin leads a growing team of dedicated engineers.
+        <br><br>
+        Our core team includes experts in <strong>Design Verification (UVM/SystemVerilog)</strong>, <strong>RTL/FPGA
+          design</strong>,
+        <strong>Design for Testability (Scan, ATPG, MBIST)</strong>, and <strong>Automation & AI/ML modeling</strong>.
+        Recruited from top-tier Indian colleges, our engineers combine academic excellence with practical
+        problem-solving.
+        <br><br>
+        From our base in Kottayam, Kerala, we deliver cost-efficient, secure, and scalable engineering services to
+        semiconductor and AI/ML clients worldwide — powered by remote collaboration, startup agility, and a shared
+        mission
+        to build high-impact technology solutions. Yarok14 is Government of India-recognized MSME, registered under the
+        Udyan scheme. (UDYAM-KL-07-0047589)
+      </p>
+
+      <!-- Hidden LinkedIn link -->
+      <div style="text-align: center;">
+        <a href="https://www.linkedin.com/in/bibin-n-biji-28a100337/" target="_blank" style="text-decoration: none;">
+          <img src="linkedin.png" alt="LinkedIn" width="20" height="20" style="vertical-align: middle;">
+          <span style="font-size: 20px; color: black; vertical-align: middle;">LinkedIn</span>
+        </a>
+      </div>
+
+    </div>
+
+
+  </section>
+
+   <section id="Our_Clients">
+    <h2>Trusted by Our Clients(Targetted & Dream Clients)</h2>
+
+
+    <div class="grid">
+      <div class="card">
+        <h3>
+          <p> Indian startups & research labs in AI, IoT, and clean tech
+          </p>
+          <p> Global chip design & EDA teams needing offshore verification
+          </p>
+          <p> Academia & Innovators working on next-gen systems
+          </p>
+        </h3>
+
+        <div class="carousel-wrapper" style="width: 100%; overflow-x: auto;">
+
+          <div class="carousel-container" style="height: 200px; width: 100%; overflow-x: auto; white-space: nowrap;">
+            <div class="carousel-track"
+              style="display: flex; align-items: center; gap: 1rem; height: 100%; width: max-content;">
+
+              <!-- Left Anchor -->
+              <span id="left"></span>
+
+              <!-- Logos (proportional, object-fit, no fixed width) -->
+              <img src="altran.png" alt="Client 1"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="amazon.jpg" alt="Client 2"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="amd.png" alt="Client 3"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="apple.png" alt="Client 4"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="aramco.jpg" alt="Client 5"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="aricent.png" alt="Client 6"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="bmw.png" alt="Client 7"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="broadcom.png" alt="Client 8"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="cypress.png" alt="Client 9"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="drdo.png" alt="Client 10"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="flipkart.jpg" alt="Client 11"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="ford.png" alt="Client 12"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="ge.png" alt="Client 13"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="google.jpg" alt="Client 14"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="huawei.png" alt="Client 15"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="intel.png" alt="Client 16"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="isro.jpg" alt="Client 17"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="lattice.png" alt="Client 18"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="marvell.jpg" alt="Client 19"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="mediaTek.png" alt="Client 20"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="ms.jpg" alt="Client 21"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="Nvidia.png" alt="Client 22"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="on.png" alt="Client 23"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="qualcomm.png" alt="Client 24"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="railways.jpg" alt="Client 25"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="renesas.png" alt="Client 26"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="samsung.png" alt="Client 27"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="shell.png" alt="Client 28"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="sondrel.png" alt="Client 29"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="stm.png" alt="Client 30"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="synopsys.png" alt="Client 31"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="tata.avif" alt="Client 32"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="tcs.png" alt="Client 33"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="tech_mahindra.png" alt="Client 34"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="tesla.jpg" alt="Client 35"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="tower_semicon.png" alt="Client 36"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="wipro.png" alt="Client 37"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="infineon.png" alt="Client 38"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="nxp.avif" alt="Client 39"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="microchip.png" alt="Client 40"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="raytheon.png" alt="Client 41"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+              <img src="rafael.png" alt="Client 42"
+                style="height: 100%; width: auto; max-width: 100%; object-fit: contain;" />
+
+              <!-- Right Anchor -->
+              <span id="right"></span>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+   <section id="csp">
+    <h2>Case studies and Projects</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>RISC-V pipeline</h3>
+        <div>
+          <p>
+            Custom RISC-V pipeline design and verification—delivering scalable, high-performance cores tailored for
+            next-gen embedded and AI applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>MAC array Design Verification (DV)</h3>
+        <div>
+          <p>
+            Accelerate silicon success with high-coverage, UVM-based Design Verification for MAC arrays—ensuring
+            accuracy, performance, and seamless integration in compute-intensive SoCs.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <h3>LLM & Gen AI in RTL to GDSII Design</h3>
+        <div>
+          <p>
+            Explore the feasibility of integrating Large Language Models and Generative AI across the RTL-to-GDSIII
+            pipeline.
+            From RTL generation to timing analysis and DRC fixing, AI is reshaping silicon design with intelligent
+            automation,
+            accelerating development while reducing manual bottlenecks.
+          </p>
+          <ul>
+            <li><strong>Feasibility:</strong> High in RTL, reporting, and constraint generation</li>
+            <li><strong>Challenges:</strong> Tool integration, IP security, explainability</li>
+            <li><strong>Outlook:</strong> Domain-specific LLMs and RAG systems can bridge the gap</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="services">
+    <h2>Our Engineering Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>ASIC Design</h3>
+        <p>Custom RTL and analog design solutions for next-gen hardware.</p>
+        <p><strong>Specialties:</strong> Fabless semiconductor companies, ASIC/SoC design houses</p>
+      </div>
+      <div class="card">
+        <h3>FPGA Prototyping</h3>
+        <p>Rapid hardware-software co-design and validation on FPGA platforms.</p>
+        <p><strong>Specialties:</strong> Automotive, AI, 5G, and defense chip companies</p>
+      </div>
+      <div class="card">
+        <h3>Verification</h3>
+        <p>UVM and formal verification to ensure flawless silicon implementation.</p>
+        <p><strong>Specialties:</strong> IP vendors and startups</p>
+      </div>
+      <div class="card">
+        <h3>Client Tool Access</h3>
+        <p>Secure VPN-based access to client tools and environments under signed NDAs, ensuring confidentiality and
+          collaboration.</p>
+      </div>
+      <div class="card">
+        <h3>DFT (Design for Testability)</h3>
+        <p> Scan architecture design, memory BIST, boundary scan, and low-overhead test
+          logic insertion. </p>
+      </div>
+
       <div class="card">
         <h3>AI & Machine Learning</h3>
         <p>Develop intelligent systems for predictive analytics and optimization.</p>
@@ -313,43 +768,11 @@
         <p>Accurately input and manage data to ensure database integrity and support business operations.</p>
       </div>
     </div>
-    </div>
-  </section>
 
-  <section id="services">
-    <h2>VLSI Hardware & RF Engineering Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>ASIC Design</h3>
-        <p>Custom RTL and analog design solutions for next-gen hardware.</p>
-        <p><strong>Specialties:</strong> Fabless semiconductor companies, ASIC/SoC design houses</p>
-      </div>
-      <div class="card">
-        <h3>FPGA Prototyping</h3>
-        <p>Rapid hardware-software co-design and validation on FPGA platforms.</p>
-        <p><strong>Specialties:</strong> Automotive, AI, 5G, and defense chip companies</p>
-      </div>
-      <div class="card">
-        <h3>Verification</h3>
-        <p>UVM and formal verification to ensure flawless silicon implementation.</p>
-        <p><strong>Specialties:</strong> IP vendors and startups</p>
-      </div>
-      <div class="card">
-        <h3>Client Tool Access</h3>
-        <p>Secure VPN-based access to client tools and environments under signed NDAs, ensuring confidentiality and
-          collaboration.</p>
-      </div>
-      <div class="card">
-        <h3>DFT (Design for Testability)</h3>
-        <p> Scan architecture design, memory BIST, boundary scan, and low-overhead test
-          logic insertion. </p>
-      </div>
-    </div>
   </section>
 
 
-
-  <section id="prdct">
+   <section id="product">
     <h2>Products</h2>
     <div class="grid">
       <div class="card">
@@ -405,52 +828,145 @@
 
 
   </section>
+   
+ 
 
-  <section id="csp">
-    <h2>Case studies and Projects</h2>
+  
+
+  <section id="engmnt_models">
+    <h2 style="text-align: center;">Flexible Engagement & Pricing Models</h2>
     <div class="grid">
 
       <div class="card">
-        <h3>RISC-V pipeline</h3>
-        <div>
-          <p>
-            Custom RISC-V pipeline design and verification—delivering scalable, high-performance cores tailored for
-            next-gen embedded and AI applications.
-          </p>
-        </div>
+        <h3>VLSI Design & Verification</h3>
+        <p>Includes RTL design, simulation, synthesis, and verification.</p>
+        <ul>
+          <li>Hourly: $15 to $25</li>
+          <li>Mini Project: $300 to $500</li>
+          <li>Small Project: $600 to $1000</li>
+          <li>Medium Project: $1200 to $2500</li>
+          <li>Large Project: $3000+</li>
+        </ul>
       </div>
 
       <div class="card">
-        <h3>MAC array Design Verification (DV)</h3>
-        <div>
-          <p>
-            Accelerate silicon success with high-coverage, UVM-based Design Verification for MAC arrays—ensuring
-            accuracy, performance, and seamless integration in compute-intensive SoCs.
-          </p>
-        </div>
+        <h3>AI / ML Solutions</h3>
+        <p>Custom ML models, training pipelines, inference engines, optimization.</p>
+        <ul>
+          <li>Hourly: $12 to $20</li>
+          <li>Mini Project: $250 to $400</li>
+          <li>Small Project: $500 to $900</li>
+          <li>Medium Project: $1000 to $2000</li>
+          <li>Large Project: $2500+</li>
+        </ul>
       </div>
+
       <div class="card">
-        <h3>LLM & Gen AI in RTL to GDSII Design</h3>
-        <div>
-          <p>
-            Explore the feasibility of integrating Large Language Models and Generative AI across the RTL-to-GDSIII
-            pipeline.
-            From RTL generation to timing analysis and DRC fixing, AI is reshaping silicon design with intelligent
-            automation,
-            accelerating development while reducing manual bottlenecks.
-          </p>
-          <ul>
-            <li><strong>Feasibility:</strong> High in RTL, reporting, and constraint generation</li>
-            <li><strong>Challenges:</strong> Tool integration, IP security, explainability</li>
-            <li><strong>Outlook:</strong> Domain-specific LLMs and RAG systems can bridge the gap</li>
-          </ul>
-        </div>
+        <h3>Embedded System Design</h3>
+        <p>Firmware development, board bring-up, IoT edge devices.</p>
+        <ul>
+          <li>Hourly: $10 to $18</li>
+          <li>Mini Project: $200 to $400</li>
+          <li>Small Project: $500 to $800</li>
+          <li>Medium Project: $900 to $1800</li>
+          <li>Large Project: $2000+</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Software Development (SDE)</h3>
+        <p>Web apps, APIs, backend systems, automation tools.</p>
+        <ul>
+          <li>Hourly: $10 to $20</li>
+          <li>Mini Project: $150t to $300</li>
+          <li>Small Project: $400 to $800</li>
+          <li>Medium Project: $900 to $1800</li>
+          <li>Large Project: $2000+</li>
+        </ul>
       </div>
     </div>
   </section>
+  <div style="text-align: center;">
+    <p>
+      <strong>Key Considerations:</strong><br><br>
+      These prices are competitive startup rates, approx. 30 to 50% lower than typical market rates.<br><br>
+      A “Mini Project” is assumed to be less than 1 week of effort, “Small” is 1 to 2 weeks, “Medium” is 2 to 4
+      weeks, and “Large” is anything beyond a month.
+    </p>
+  </div>
+
+</section>
+
+ <section id="Tech_stacks">
+    <h2>Our Cutting-Edge Tech Stacks</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><br><br>Toos, Skills and Technologies<br><br></h3>
+        <div>
+
+          <strong>Hardware/EDA: SystemVerilog, UVM, Cadence, Synopsys, QuestaSim</strong><br><br>
+
+          <strong>AI/ML: Python, PyTorch, TensorFlow, ONNX, OpenCV</strong><br><br>
+
+          <strong>Embedded: C/C++, ARM, RISC-V, Thejas32, FreeRTOS</strong><br><br>
+
+          <strong>flutter/Web & Backend: Flask, FastAPI, SQLite, HTML/CSS</strong><br><br>
+
+          <strong>Tools: Git, Docker, VS Code, GitHub Actions</strong><br><br>
+
+
+
+          <div class="carousel-wrapper" style="width: 100%; overflow-x: auto;">
+
+            <div class="carousel-container" style="height: 200px; width: 100%; overflow-x: auto; white-space: nowrap;">
+              <div class="carousel-track"
+                style="display: flex; align-items: center; gap: 1rem; height: 100%; width: max-content;">
+
+                <!-- Left Anchor -->
+                <span id="left"></span>
+
+                <!-- Logos -->
+                <img src="C++.png" alt="Tool 1" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="cadence_SV.png" alt="Tool 2" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="CSS HTML JS.png" alt="Tool 3" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="docker vs code.png" alt="Tool 4" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="fast API SQLite.jpg" alt="Tool 5" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="flask.png" alt="Tool 6" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="FreeRTOS-RISC-V.jpg" alt="Tool 7" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="git.png" alt="Tool 8" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="intel_FV.jpg" alt="Tool 9" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="Linux.png" alt="Tool 10" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="onnx.png" alt="Tool 11" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="openCV.png" alt="Tool 12" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="Python-Logo.jpg" alt="Tool 13" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="SoC using SV.jpg" alt="Tool 14" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="verilator.png" alt="Tool 15" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="intel_FV_pract.png" alt="Tool 16" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="tensorflow-vs-pytorch.png" alt="Tool 17"
+                  style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="verilog fpga.png" alt="Tool 18" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="systemverilog.jpg" alt="Tool 19" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="json.jpg" alt="Tool 20" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="flutter dart.jpg" alt="Tool 21" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="aws cloud.png" alt="Tool 22" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="Tcl Tk.gif" alt="Tool 23" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="power BI.jpg" alt="Tool 24" style="height: 100%; width: auto; object-fit: contain;" />
+                <img src="all PL.jpg" alt="Tool 25" style="height: 100%; width: auto; object-fit: contain;" />
+
+                <!-- Right Anchor -->
+                <span id="right"></span>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+  </section>
+
+ 
 
   <section id="contact">
-    <h2>Contact Us</h2>
+    <h2>Get in Touch With Us</h2>
     <p class="centered">
       If you're looking to accelerate tapeouts, improve verification coverage, reduce costs with open-source
       integration, or prototype faster on FPGA, let's connect!
@@ -460,7 +976,6 @@
       Phone: <a href="tel:+919526932961">+91-9526932961</a> |
       WhatsApp: <a href="https://wa.me/919526932961" target="_blank">Message on WhatsApp</a>
     </p>
-
   </section>
 
   <footer>
